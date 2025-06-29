@@ -23,10 +23,25 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+  // Bangkok
+  let bangkokElement = document.querySelector("#bangkok");
+  if (bangkokElement) {
+    let bangkokDateElement = bangkokElement.querySelector(".date");
+    let bangkokTimeElement = bangkokElement.querySelector(".time");
+    let bangkokTime = moment().tz("Asia/Bangkok");
+
+    bangkokDateElement.innerHTML = bangkokTime.format("MMMM Do YYYY");
+    bangkokTimeElement.innerHTML = bangkokTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 }
 
 function updateCity(event) {
   let cityTimeZone = event.target.value;
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
