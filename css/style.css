@@ -1,6 +1,14 @@
 body {
-  font-family: "Montserrat", sans-serif;
-  color: #ffff;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
+  color: #774791;
+  background-color: black;
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/175/266/original/0_0.png?1761564030);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 h1 {
@@ -14,7 +22,7 @@ select {
   font-size: 16px;
   padding: 10px 5px;
   border-radius: 5px;
-  border: 1px solid #ffff;
+  border: 2px solid #00000000;
 }
 
 h2 {
@@ -23,10 +31,10 @@ h2 {
 }
 .container {
   max-width: 600px;
-  margin: 60px auto;
-  background-color: #64a70b;
+  margin: 350px auto;
+  background-color: #ffff;
   border-radius: 10px;
-  box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+  box-shadow: 0px 0px 74px 15px rgba(254, 250, 216, 0.8);
   padding: 30px;
   margin-bottom: 20px;
 }
@@ -58,7 +66,12 @@ h2 {
 }
 
 footer {
+  margin-top: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.5px;
   text-align: center;
-  font-size: 16px;
+  font-size: 12px;
   color: rgba(0, 0, 0, 0.6);
 }
